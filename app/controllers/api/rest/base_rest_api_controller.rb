@@ -1,6 +1,4 @@
 class Api::Rest::BaseRestApiController < ApplicationController
-  respond_to :json
-
   rescue_from StandardError, with: :render_500
   rescue_from ArgumentError, with: :render_400
   rescue_from ActiveRecord::RecordNotFound, with: :render_404

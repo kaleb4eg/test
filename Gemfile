@@ -10,6 +10,10 @@ end
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
+gem 'nokogiri', '~> 1.7', '>= 1.7.1'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'bulk_insert', '~> 1.4'
+gem 'delayed_job_active_record'
 
 group :development, :test do
   gem 'byebug', platform: :mri
